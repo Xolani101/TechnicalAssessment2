@@ -20,6 +20,7 @@
   "homepage": "https://github.com/Xolani101/TechnicalAssessment2#readme",
   "devDependencies": {
     "@playwright/test": "^1.54.1",
+    "dotenv": "^17.2.0",
     "monocart-reporter": "^2.9.21"
   }
 }
