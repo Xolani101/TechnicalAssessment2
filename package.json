@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test --config=playwright.config.js"
-    ,
+    "test": "npx playwright test --config=playwright.config.js",
     "report": "npx playwright show-report"
   },
   "repository": {
@@ -20,6 +19,7 @@
   },
   "homepage": "https://github.com/Xolani101/TechnicalAssessment2#readme",
   "devDependencies": {
-    "@playwright/test": "^1.54.1"
+    "@playwright/test": "^1.54.1",
+    "monocart-reporter": "^2.9.21"
   }
 }

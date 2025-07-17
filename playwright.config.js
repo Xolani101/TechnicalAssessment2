@@ -3,7 +3,11 @@ const config = {
   testDir: './tests',
   timeout: 30000,
   retries: 0,
-  reporter: [['list'], ['html', { outputFolder: 'playwright-report', open: 'never' }]],
+  reporter: [
+    ['list'],
+    ['html', { outputFolder: 'playwright-report', open: 'never' }],
+    ['monocart-reporter', { name: 'Monocart Custom Report', outputFile: './monocart-report/index.html' }]
+  ],
   use: {
     headless: true,
     screenshot: 'only-on-failure',
