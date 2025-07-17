@@ -15,9 +15,28 @@ const config = {
     trace: 'on-first-retry',
   },
   projects: [
-    { name: 'Chromium', use: { browserName: 'chromium' } },
-    { name: 'Firefox', use: { browserName: 'firefox' } },
-    { name: 'WebKit', use: { browserName: 'webkit' } },
+    // UI tests - run on all browsers
+    {
+      name: 'UI Tests - Chromium',
+      testMatch: /.*uiautomationtesting\.spec\.js/,
+      use: { browserName: 'chromium' }
+    },
+    {
+      name: 'UI Tests - Firefox', 
+      testMatch: /.*uiautomationtesting\.spec\.js/,
+      use: { browserName: 'firefox' }
+    },
+    {
+      name: 'UI Tests - WebKit',
+      testMatch: /.*uiautomationtesting\.spec\.js/,
+      use: { browserName: 'webkit' }
+    },
+    // API tests - run only on Chromium
+    {
+      name: 'API Tests',
+      testMatch: /.*apitesting\.spec\.js/,
+      use: { browserName: 'chromium' }
+    }
   ],
 };
 
