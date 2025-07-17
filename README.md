@@ -13,6 +13,27 @@
    npm install
    ```
 
+## Environment Variables
+
+This project uses the [`dotenv`](https://www.npmjs.com/package/dotenv) package to manage environment variables.
+
+1. Create a `.env` file in the project root.
+2. Add the required environment variables. For example:
+
+   ```env
+   API_USER_EMAIL=your_email@example.com
+   API_USER_PASSWORD=your_password
+   PGHOST=localhost
+   PGPORT=5432
+   PGUSER=your_db_user
+   PGPASSWORD=your_db_password
+   PGDATABASE=your_db_name
+   ```
+
+3. The tests and scripts will automatically load these variables.
+
+> **Note:** Do not commit your `.env` file to version control. It is already included in `.gitignore`.
+
 ## Running Tests
 
 - **Run all Playwright tests:**
