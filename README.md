@@ -13,7 +13,7 @@
    npm install
    ```
 
-## Environment Variables
+## Environment Variables .
 
 This project uses the [`dotenv`](https://www.npmjs.com/package/dotenv) package to manage environment variables.
 
