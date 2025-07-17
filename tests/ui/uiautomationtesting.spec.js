@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-const { getTestData } = require('./utils/utils');
+const { getTestData } = require('../utils/utils');
 
 const testData = getTestData();
 
