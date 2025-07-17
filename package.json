@@ -1,0 +1,25 @@
+{
+  "name": "technicalassessment2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test --config=playwright.config.js"
+    ,
+    "report": "npx playwright show-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xolani101/TechnicalAssessment2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xolani101/TechnicalAssessment2/issues"
+  },
+  "homepage": "https://github.com/Xolani101/TechnicalAssessment2#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.54.1"
+  }
+}
