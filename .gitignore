@@ -11,9 +11,6 @@ playwright-report/
 .DS_Store
 Thumbs.db
 
-# Env files
-.env
-
 # VSCode settings
 .vscode/
 test-results/.last-run.json
