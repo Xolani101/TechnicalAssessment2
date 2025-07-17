@@ -16,3 +16,4 @@ Thumbs.db
 
 # VSCode settings
 .vscode/
+test-results/.last-run.json
