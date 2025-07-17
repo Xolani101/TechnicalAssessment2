@@ -1,0 +1,18 @@
+# Node modules
+node_modules/
+
+# Playwright reports
+playwright-report/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Env files
+.env
+
+# VSCode settings
+.vscode/
