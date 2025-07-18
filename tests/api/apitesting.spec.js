@@ -14,20 +14,20 @@ test.describe('API Task Management', () => {
     expect(apiKey).toBe('reqres-free-v1');
   });
 
-  // test('Authenticate and get JWT token', async ({ request }) => {
-  //   const loginRes = await request.post('https://reqres.in/api/login', {
-  //     data: {
-  //       email: process.env.API_USER_EMAIL,
-  //       password: process.env.API_USER_PASSWORD
-  //     },
-  //     headers: {
-  //       'x-api-key': 'reqres-free-v1'
-  //     }
-  //   });
-  //   expect(loginRes.ok()).toBeTruthy();
-  //   token = (await loginRes.json()).token;
-  //   expect(token).toBeTruthy();
-  // });
+  test('Authenticate and get JWT token', async ({ request }) => {
+    const loginRes = await request.post('https://reqres.in/api/login', {
+      data: {
+        email: process.env.API_USER_EMAIL,
+        password: process.env.API_USER_PASSWORD
+      },
+      headers: {
+        'x-api-key': 'reqres-free-v1'
+      }
+    });
+    expect(loginRes.ok()).toBeTruthy();
+    token = (await loginRes.json()).token;
+    expect(token).toBeTruthy();
+  });
 
   test('Create a new task', async ({ request }) => {
     const createRes = await request.post('https://reqres.in/api/tasks', {
